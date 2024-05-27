@@ -1,5 +1,5 @@
 {
-  "name": "node-jose",
+  "name": "node-jose-client",
   "version": "2.2.0",
   "description": "A JavaScript implementation of the JSON Object Signing and Encryption (JOSE) for current web browsers and node.js-based servers",
   "keywords": [
@@ -28,7 +28,7 @@
     "test": "mocha './test/**/*-test.js'"
   },
   "browser": {
-    "crypto": false
+    "crypto": true
   },
   "react-native": {
     "crypto": false
@@ -42,7 +42,8 @@
     "node-forge": "^1.2.1",
     "pako": "^2.0.4",
     "process": "^0.11.10",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "crypto-js": "^4.2.0"
   },
   "devDependencies": {
     "bowser": "^2.11.0",
